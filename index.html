@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--
+   Hello : 
+   My Name is Suhair Abu Nema 
+   FullStack Web Developer
+	mobile is :  +972597141399
+    mail:  suhair.nema@gmail.com
+   
+   This is the task you provide to FrontEnd Job 
+   As I understood  From vedio you provide .
+
+    I am very expert in FrontEnd Webs 
+    In this task i use tailwind Css   
+	if we meeting we will discuss more .... 
+	
+	Regards ^_^
+   -->
+
+   <link href="./src/output.css" rel="stylesheet">
+   <style>
+      .grid-item {
+         transition: all 0.3s ease;
+      }
+   </style>
+
+   <title>Coktilat Grids</title>
+   <script>
+  
+		alert('Hello : ' 
+		+' My Name is Suhair Abu Nema  \n  '
+        +'FullStack Web Developer \n'
+	    +'mobile is :  +972597141399 \n'
+        +' mail:  suhair.nema@gmail.com \n'
+        +' This is the task you provide to FrontEnd Job \n '
+        +' As I understood  From vedio you provide \n'
+        +'I am very expert in FrontEnd Webs \n '
+        +' In this task i use tailwind Css  \n '
+	    +' if we meeting we will discuss more .... \n '
+	    +' Regards ^_^');
+   </script>
+
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="p-6 ">
+   <div class="container-xl">
+
+      <div class="">
+         <div id="menu" class="flex  gap-4 ">
+            <div data-id="1" class="menu-item px-3 cursor-pointer  rounded-full">Sarah, 28 </div>
+            <div data-id="2" class="menu-item px-3 cursor-pointer  rounded-full ">Michael, 45</div>
+            <div data-id="3" class="menu-item px-3 cursor-pointer  rounded-full">Raj, 35</div>
+            <div data-id="4" class="menu-item px-3 cursor-pointer  rounded-full">Aisha, 28</div>
+            <div data-id="5" class="menu-item px-3 cursor-pointer  rounded-full">Emaa, 29 </div>
+            <div data-id="6" class="menu-item px-3 cursor-pointer rounded-full">Carlos, 41</div>
+            <div data-id="7" class="menu-item px-3 cursor-pointer rounded-full">Mary, 35</div>
+            <div data-id="8" class="menu-item px-3 cursor-pointer rounded-full">jony, 32</div>
+            <div data-id="9" class="menu-item  px-3 cursor-pointer rounded-full">Carolina, 23</div>
+         </div>
+      </div>
+      <br>
+
+
+
+      <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 auto-rows-auto gap-4 "
+         style="grid-auto-flow: dense;">
+         <div data-id="1" class="grid-item  col-span-1 row-span-1" data-expand="both">
+            <div
+               class="group bg-card/40 text-card-foreground rounded-lg shadow-md overflow-hidden cursor-pointer relative transition-all duration-300 ease-in-out border border-border/5 md:hover:border-border/10 md:hover:bg-card/60 md:hover:shadow-xl md:hover:shadow-primary/5">
+               <div class="card-content h-full md:overflow-visible">
+                  <div class="p-6 h-full flex flex-col">
+                     <div class="card-scrollable-content">
+                        <div class="flex items-start gap-4">
+                           <div class="relative flex-shrink-0">
+                              <div
+                                 class="w-16 h-16 rounded-full overflow-hidden ring-2 ring-background shadow-lg transition-transform duration-200">
+                                 <img src="https://images.pexels.com/photos/8993561/pexels-photo-8993561.jpeg"
+                                    alt="Aisha's profile" crossorigin="anonymous" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                              </div>
+                              <div class="absolute bottom-0 right-0">
+                                 <div class="relative">
+                                    <div class="w-5 h-5 rounded-full ring-2 ring-background bg-green-500"></div>
+                                    <div class="absolute end-6 bottom-0 whitespace-nowrap
+                                        bg-background/60 backdrop-blur-sm px-2 py-1 
+                                        rounded-full text-xs pointer-events-none transition-all 
+                                        duration-200 border border-border/10 opacity-0 translate-x-2">
+                                       Available Now </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="flex-1 min-w-0">
+                              <div class="flex items-center gap-2">
+                                 <h3 class="font-bold transition-all duration-300 text-xl">Sarah, 28</h3><span
+                                    class="px-2 py-1 bg-indigo/10 text-indigo-700 rounded-full text-xs bg-indigo-100">Female</span>
+                              </div>
+                              <div class="mt-2 flex items-center gap-2 text-sm text-gray-500"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 me-2 flex-shrink-0">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                 </svg><span class="text-xs text-green-500 ">Available Now</span></div>
+                           </div>
+                           <div class="flex-shrink-0  ">
+                              <button title=" Notify Me when Available  "
+                                 class="group/btn inline-flex items-center 
+                                     justify-center w-10 h-10 border-2 border-primary text-gray-100
+                                     hover:bg-primary hover:text-gray-400 focus:bg-primary
+                                    focus:text-gray-400-foreground rounded-full transition-all duration-200 bg-indigo-500">
+
+                                 <svg width="20" height="20" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M7.38028 7.85323C8.07627 9.30285 9.02506 10.6615 10.2266 11.8631C11.4282 13.0646 12.7869 14.0134 14.2365 14.7094C14.3612 14.7693 14.4235 14.7992 14.5024 14.8222C14.7828 14.904 15.127 14.8453 15.3644 14.6752C15.4313 14.6274 15.4884 14.5702 15.6027 14.4559C15.9523 14.1063 16.1271 13.9315 16.3029 13.8172C16.9658 13.3862 17.8204 13.3862 18.4833 13.8172C18.6591 13.9315 18.8339 14.1063 19.1835 14.4559L19.3783 14.6508C19.9098 15.1822 20.1755 15.448 20.3198 15.7333C20.6069 16.3009 20.6069 16.9712 20.3198 17.5387C20.1755 17.8241 19.9098 18.0898 19.3783 18.6213L19.2207 18.7789C18.6911 19.3085 18.4263 19.5733 18.0662 19.7756C17.6667 20 17.0462 20.1614 16.588 20.16C16.1751 20.1588 15.8928 20.0787 15.3284 19.9185C12.295 19.0575 9.43264 17.433 7.04466 15.045C4.65668 12.6571 3.03221 9.79471 2.17124 6.76131C2.01103 6.19687 1.93092 5.91464 1.9297 5.5017C1.92833 5.04347 2.08969 4.42298 2.31411 4.02348C2.51636 3.66345 2.78117 3.39863 3.3108 2.86901L3.46843 2.71138C3.99987 2.17993 4.2656 1.91421 4.55098 1.76987C5.11854 1.4828 5.7888 1.4828 6.35636 1.76987C6.64174 1.91421 6.90747 2.17993 7.43891 2.71138L7.63378 2.90625C7.98338 3.25585 8.15819 3.43065 8.27247 3.60643C8.70347 4.26932 8.70347 5.1239 8.27247 5.78679C8.15819 5.96257 7.98338 6.13738 7.63378 6.48698C7.51947 6.60129 7.46231 6.65845 7.41447 6.72526C7.24446 6.96269 7.18576 7.30695 7.26748 7.5873C7.29048 7.6662 7.32041 7.72854 7.38028 7.85323Z"
+                                       stroke="#fff" class="w-5 h-5" stroke-width="2" stroke-linecap="round"
+                                       stroke-linejoin="round" />
+                                 </svg>
+
+                              </button>
+                           </div>
+                        </div>
+                        <div class="mt-3 flex flex-wrap gap-1.5"><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">self-esteem</span><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">cultural-identity</span><span
+                              class="px-2 py-1  bg-gray-100 text-indigo-800  rounded-full text-xs">relationships</span>
+                        </div>
+                        <div class="mt-4">
+                           <p class="transition-all duration-300 text-sm text-gray-500 line-clamp-2">
+                              Compassionate
+                              listener with a multicultural background. I help people navigate identity issues and
+                              relationship challeng...</p>
+                        </div>
+                        <div class="hidden content-transition mt-4 space-y-4 content-collapsed">
+                           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <polygon
+                                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Rating</div>
+                                 <div class="text-md font-bold text-foreground">4.9/5</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-message-circle w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Sessions</div>
+                                 <div class="text-md font-bold text-foreground">250+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-heart w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path
+                                       d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                    </path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Helped</div>
+                                 <div class="text-md font-bold text-foreground">180+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-users w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Return Rate</div>
+                                 <div class="text-md font-bold text-foreground">85%</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2 flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                 </svg> Avialables </h4>
+                              <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Mon:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Tue:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Wed:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Thu:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Fri:</span> 9AM-5PM</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2"> Languages</h4>
+                              <div class="flex flex-wrap gap-1.5"><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Arabic</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">American
+                                    English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Lebanese
+                                    Arabic</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-background/60 backdrop-blur-sm flex items-center 
+                  justify-center transition-all duration-200 hover:bg-background hover:shadow-md focus:outline-none 
+                  focus:ring-2 focus:ring-primary ">
+                  <span class="icon-expand block">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-maximize2 w-5 h-5 text-foreground/60 group-hover:text-foreground">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" x2="14" y1="3" y2="10"></line>
+                        <line x1="3" x2="10" y1="21" y2="14"></line>
+                     </svg>
+                  </span>
+                  <span class="icon-collapse hidden">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 12H8M8 12V18M8 12L1 19M18 8H12M12 8V2M12 8L19 1" stroke="black" stroke-width="2"
+                           stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </span>
+
+
+               </button>
+            </div>
+
+         </div>
+
+         <div data-id="2" class="grid-item  col-span-1 row-span-1" data-expand="both">
+
+            <div
+               class="group bg-card/40 text-card-foreground rounded-lg shadow-md overflow-hidden cursor-pointer relative transition-all duration-300 ease-in-out border border-border/5 md:hover:border-border/10 md:hover:bg-card/60 md:hover:shadow-xl md:hover:shadow-primary/5">
+               <div class="card-content h-full md:overflow-visible">
+                  <div class="p-6 h-full flex flex-col">
+                     <div class="card-scrollable-content">
+                        <div class="flex items-start gap-4">
+                           <div class="relative flex-shrink-0">
+                              <div
+                                 class="w-16 h-16 rounded-full overflow-hidden ring-2 ring-background shadow-lg transition-transform duration-200">
+                                 <img src="https://images.pexels.com/photos/634021/pexels-photo-634021.jpeg"
+                                    alt="Aisha's profile" crossorigin="anonymous" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                              </div>
+                              <div class="absolute bottom-0 right-0">
+                                 <div class="relative">
+                                    <div class="w-5 h-5 rounded-full ring-2 ring-background bg-yellow-500"></div>
+                                    <div
+                                       class="absolute end-6 bottom-0 whitespace-nowrap bg-background/60 backdrop-blur-sm px-2 py-1 rounded-full text-xs pointer-events-none transition-all duration-200 border border-border/10 opacity-0 translate-x-2">
+                                       Not Available </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="flex-1 min-w-0">
+                              <div class="flex items-center gap-2">
+                                 <h3 class="font-bold transition-all duration-300 text-xl">Michael, 45</h3><span
+                                    class="px-2 py-1 bg-indigo/10 text-indigo-700 rounded-full text-xs bg-indigo-100">Male</span>
+                              </div>
+                              <div class="mt-2 flex items-center text-sm text-gray-500"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 me-2 flex-shrink-0">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                 </svg><span class="text-xs">Weekends &amp; Thursdays 10AM-4PM EST</span></div>
+                           </div>
+                           <div class="flex-shrink-0  ">
+                              <button title=" Notify Me when Available  "
+                                 class="group/btn inline-flex items-center 
+                                  justify-center w-10 h-10 border-2 border-indigo-500 text-indigo-500
+                                  hover:bg-primary hover:text-gray-400-foreground focus:bg-primary
+                                 focus:text-gray-400-foreground rounded-full transition-all duration-200
+                                  "><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-bell w-5 h-5">
+                                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="mt-3 flex flex-wrap gap-1.5"><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">self-esteem</span><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">cultural-identity</span><span
+                              class="px-2 py-1  bg-gray-100 text-indigo-800  rounded-full text-xs">relationships</span>
+                        </div>
+                        <div class="mt-4">
+                           <p class="transition-all duration-300 text-sm text-gray-500 line-clamp-2">
+                              Compassionate
+                              listener with a multicultural background. I help people navigate identity issues and
+                              relationship challeng...</p>
+                        </div>
+                        <div class="hidden content-transition mt-4 space-y-4 content-collapsed">
+                           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <polygon
+                                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Rating</div>
+                                 <div class="text-md font-bold text-foreground">4.9/5</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-message-circle w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Sessions</div>
+                                 <div class="text-md font-bold text-foreground">250+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-heart w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path
+                                       d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                    </path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Helped</div>
+                                 <div class="text-md font-bold text-foreground">180+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-users w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Return Rate</div>
+                                 <div class="text-md font-bold text-foreground">85%</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2 flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                 </svg> Avialables </h4>
+                              <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Mon:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Tue:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Wed:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Thu:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Fri:</span> 9AM-5PM</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2"> Languages</h4>
+                              <div class="flex flex-wrap gap-1.5"><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Arabic</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">American
+                                    English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Lebanese
+                                    Arabic</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-background/60 backdrop-blur-sm flex items-center 
+               justify-center transition-all duration-200 hover:bg-background hover:shadow-md focus:outline-none 
+               focus:ring-2 focus:ring-primary ">
+                  <span class="icon-expand block">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-maximize2 w-5 h-5 text-foreground/60 group-hover:text-foreground">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" x2="14" y1="3" y2="10"></line>
+                        <line x1="3" x2="10" y1="21" y2="14"></line>
+                     </svg>
+                  </span>
+                  <span class="icon-collapse hidden">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 12H8M8 12V18M8 12L1 19M18 8H12M12 8V2M12 8L19 1" stroke="black" stroke-width="2"
+                           stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </span>
+
+
+               </button>
+            </div>
+
+         </div>
+         <div data-id="3" class="grid-item  col-span-1 row-span-1" data-expand="both">
+
+            <div
+               class="group bg-card/40 text-card-foreground rounded-lg shadow-md overflow-hidden cursor-pointer relative transition-all duration-300 ease-in-out border border-border/5 md:hover:border-border/10 md:hover:bg-card/60 md:hover:shadow-xl md:hover:shadow-primary/5">
+               <div class="card-content h-full md:overflow-visible">
+                  <div class="p-6 h-full flex flex-col">
+                     <div class="card-scrollable-content">
+                        <div class="flex items-start gap-4">
+                           <div class="relative flex-shrink-0">
+                              <div
+                                 class="w-16 h-16 rounded-full overflow-hidden ring-2 ring-background shadow-lg transition-transform duration-200">
+                                 <img src="https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg"
+                                    alt="Aisha's profile" crossorigin="anonymous" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                              </div>
+                              <div class="absolute bottom-0 right-0">
+                                 <div class="relative">
+                                    <div class="w-5 h-5 rounded-full ring-2 ring-background bg-green-500"></div>
+                                    <div
+                                       class="absolute end-6 bottom-0 whitespace-nowrap bg-background/60 backdrop-blur-sm px-2 py-1 rounded-full text-xs pointer-events-none transition-all duration-200 border border-border/10 opacity-0 translate-x-2">
+                                       Not Available </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="flex-1 min-w-0">
+                              <div class="flex items-center gap-2">
+                                 <h3 class="font-bold transition-all duration-300 text-xl">Raj, 35</h3><span
+                                    class="px-2 py-1 bg-indigo/10 text-indigo-700 rounded-full text-xs bg-indigo-100">Male</span>
+                              </div>
+                              <div class="mt-2 flex gap-2 items-center text-sm text-gray-500">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 me-2 flex-shrink-0">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                 </svg><span class="text-xs text-green-500 ">Available Now</span>
+                              </div>
+                           </div>
+                           <div class="flex-shrink-0  ">
+                              <button title=" Notify Me when Available  "
+                                 class="group/btn inline-flex items-center 
+                                     justify-center w-10 h-10 border-2 border-primary text-gray-100
+                                     hover:bg-primary hover:text-gray-400 focus:bg-primary
+                                    focus:text-gray-400-foreground rounded-full transition-all duration-200 bg-indigo-500">
+
+                                 <svg width="20" height="20" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M7.38028 7.85323C8.07627 9.30285 9.02506 10.6615 10.2266 11.8631C11.4282 13.0646 12.7869 14.0134 14.2365 14.7094C14.3612 14.7693 14.4235 14.7992 14.5024 14.8222C14.7828 14.904 15.127 14.8453 15.3644 14.6752C15.4313 14.6274 15.4884 14.5702 15.6027 14.4559C15.9523 14.1063 16.1271 13.9315 16.3029 13.8172C16.9658 13.3862 17.8204 13.3862 18.4833 13.8172C18.6591 13.9315 18.8339 14.1063 19.1835 14.4559L19.3783 14.6508C19.9098 15.1822 20.1755 15.448 20.3198 15.7333C20.6069 16.3009 20.6069 16.9712 20.3198 17.5387C20.1755 17.8241 19.9098 18.0898 19.3783 18.6213L19.2207 18.7789C18.6911 19.3085 18.4263 19.5733 18.0662 19.7756C17.6667 20 17.0462 20.1614 16.588 20.16C16.1751 20.1588 15.8928 20.0787 15.3284 19.9185C12.295 19.0575 9.43264 17.433 7.04466 15.045C4.65668 12.6571 3.03221 9.79471 2.17124 6.76131C2.01103 6.19687 1.93092 5.91464 1.9297 5.5017C1.92833 5.04347 2.08969 4.42298 2.31411 4.02348C2.51636 3.66345 2.78117 3.39863 3.3108 2.86901L3.46843 2.71138C3.99987 2.17993 4.2656 1.91421 4.55098 1.76987C5.11854 1.4828 5.7888 1.4828 6.35636 1.76987C6.64174 1.91421 6.90747 2.17993 7.43891 2.71138L7.63378 2.90625C7.98338 3.25585 8.15819 3.43065 8.27247 3.60643C8.70347 4.26932 8.70347 5.1239 8.27247 5.78679C8.15819 5.96257 7.98338 6.13738 7.63378 6.48698C7.51947 6.60129 7.46231 6.65845 7.41447 6.72526C7.24446 6.96269 7.18576 7.30695 7.26748 7.5873C7.29048 7.6662 7.32041 7.72854 7.38028 7.85323Z"
+                                       stroke="#fff" class="w-5 h-5" stroke-width="2" stroke-linecap="round"
+                                       stroke-linejoin="round" />
+                                 </svg>
+
+                              </button>
+                           </div>
+                        </div>
+                        <div class="mt-3 flex flex-wrap gap-1.5"><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">self-esteem</span><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">cultural-identity</span><span
+                              class="px-2 py-1  bg-gray-100 text-indigo-800  rounded-full text-xs">relationships</span>
+                        </div>
+                        <div class="mt-4">
+                           <p class="transition-all duration-300 text-sm text-gray-500 line-clamp-2">
+                              Compassionate
+                              listener with a multicultural background. I help people navigate identity issues and
+                              relationship challeng...</p>
+                        </div>
+                        <div class="hidden content-transition mt-4 space-y-4 content-collapsed">
+                           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <polygon
+                                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Rating</div>
+                                 <div class="text-md font-bold text-foreground">4.9/5</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-message-circle w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Sessions</div>
+                                 <div class="text-md font-bold text-foreground">250+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-heart w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path
+                                       d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                    </path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Helped</div>
+                                 <div class="text-md font-bold text-foreground">180+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-users w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Return Rate</div>
+                                 <div class="text-md font-bold text-foreground">85%</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2 flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                 </svg> Avialables </h4>
+                              <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Mon:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Tue:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Wed:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Thu:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Fri:</span> 9AM-5PM</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2"> Languages</h4>
+                              <div class="flex flex-wrap gap-1.5"><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Arabic</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">American
+                                    English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Lebanese
+                                    Arabic</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-background/60 backdrop-blur-sm flex items-center 
+               justify-center transition-all duration-200 hover:bg-background hover:shadow-md focus:outline-none 
+               focus:ring-2 focus:ring-primary ">
+                  <span class="icon-expand block">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-maximize2 w-5 h-5 text-foreground/60 group-hover:text-foreground">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" x2="14" y1="3" y2="10"></line>
+                        <line x1="3" x2="10" y1="21" y2="14"></line>
+                     </svg>
+                  </span>
+                  <span class="icon-collapse hidden">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 12H8M8 12V18M8 12L1 19M18 8H12M12 8V2M12 8L19 1" stroke="black" stroke-width="2"
+                           stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </span>
+
+
+               </button>
+            </div>
+
+         </div>
+         <div data-id="4" class="grid-item  col-span-1 row-span-1" data-expand="both">
+
+            <div
+               class="group bg-card/40 text-card-foreground rounded-lg shadow-md overflow-hidden cursor-pointer relative transition-all duration-300 ease-in-out border border-border/5 md:hover:border-border/10 md:hover:bg-card/60 md:hover:shadow-xl md:hover:shadow-primary/5">
+               <div class="card-content h-full md:overflow-visible">
+                  <div class="p-6 h-full flex flex-col">
+                     <div class="card-scrollable-content">
+                        <div class="flex items-start gap-4">
+                           <div class="relative flex-shrink-0">
+                              <div
+                                 class="w-16 h-16 rounded-full overflow-hidden ring-2 ring-background shadow-lg transition-transform duration-200">
+                                 <img src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg"
+                                    alt="Aisha's profile" crossorigin="anonymous" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                              </div>
+                              <div class="absolute bottom-0 right-0">
+                                 <div class="relative">
+                                    <div class="w-5 h-5 rounded-full ring-2 ring-background bg-red-500"></div>
+                                    <div
+                                       class="absolute end-6 bottom-0 whitespace-nowrap bg-background/60 backdrop-blur-sm px-2 py-1 rounded-full text-xs pointer-events-none transition-all duration-200 border border-border/10 opacity-0 translate-x-2">
+                                       Not Available </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="flex-1 min-w-0">
+                              <div class="flex items-center gap-2">
+                                 <h3 class="font-bold transition-all duration-300 text-xl">Aisha, 28</h3><span
+                                    class="px-2 py-1 bg-indigo/10 text-indigo-700 rounded-full text-xs bg-indigo-100">Female</span>
+                              </div>
+                              <div class="mt-2 flex items-center text-sm text-gray-500"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 me-2 flex-shrink-0">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                 </svg><span class="text-xs">Tuesdays &amp; Thursdays 5PM-8PM EST</span></div>
+                           </div>
+                           <div class="flex-shrink-0  ">
+                              <button title=" Notify Me when Available  "
+                                 class="group/btn inline-flex items-center 
+                                  justify-center w-10 h-10 border-2 border-indigo-500 text-indigo-500
+                                  hover:bg-primary hover:text-gray-400-foreground focus:bg-primary
+                                 focus:text-gray-400-foreground rounded-full transition-all duration-200
+                                  "><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-bell w-5 h-5">
+                                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="mt-3 flex flex-wrap gap-1.5"><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">self-esteem</span><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">cultural-identity</span><span
+                              class="px-2 py-1  bg-gray-100 text-indigo-800  rounded-full text-xs">relationships</span>
+                        </div>
+                        <div class="mt-4">
+                           <p class="transition-all duration-300 text-sm text-gray-500 line-clamp-2">
+                              Compassionate
+                              listener with a multicultural background. I help people navigate identity issues and
+                              relationship challeng...</p>
+                        </div>
+                        <div class="hidden content-transition mt-4 space-y-4 content-collapsed">
+                           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <polygon
+                                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Rating</div>
+                                 <div class="text-md font-bold text-foreground">4.9/5</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-message-circle w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Sessions</div>
+                                 <div class="text-md font-bold text-foreground">250+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-heart w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path
+                                       d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                    </path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Helped</div>
+                                 <div class="text-md font-bold text-foreground">180+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-users w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Return Rate</div>
+                                 <div class="text-md font-bold text-foreground">85%</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2 flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                 </svg> Avialables </h4>
+                              <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Mon:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Tue:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Wed:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Thu:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Fri:</span> 9AM-5PM</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2"> Languages</h4>
+                              <div class="flex flex-wrap gap-1.5"><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Arabic</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">American
+                                    English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Lebanese
+                                    Arabic</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-background/60 backdrop-blur-sm flex items-center 
+               justify-center transition-all duration-200 hover:bg-background hover:shadow-md focus:outline-none 
+               focus:ring-2 focus:ring-primary ">
+                  <span class="icon-expand block">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-maximize2 w-5 h-5 text-foreground/60 group-hover:text-foreground">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" x2="14" y1="3" y2="10"></line>
+                        <line x1="3" x2="10" y1="21" y2="14"></line>
+                     </svg>
+                  </span>
+                  <span class="icon-collapse hidden">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 12H8M8 12V18M8 12L1 19M18 8H12M12 8V2M12 8L19 1" stroke="black" stroke-width="2"
+                           stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </span>
+
+
+               </button>
+            </div>
+
+         </div>
+
+         <div data-id="5" class="grid-item  col-span-1 row-span-1" data-expand="both">
+
+            <div
+               class="group bg-card/40 text-card-foreground rounded-lg shadow-md overflow-hidden cursor-pointer relative transition-all duration-300 ease-in-out border border-border/5 md:hover:border-border/10 md:hover:bg-card/60 md:hover:shadow-xl md:hover:shadow-primary/5">
+               <div class="card-content h-full md:overflow-visible">
+                  <div class="p-6 h-full flex flex-col">
+                     <div class="card-scrollable-content">
+                        <div class="flex items-start gap-4">
+                           <div class="relative flex-shrink-0">
+                              <div
+                                 class="w-16 h-16 rounded-full overflow-hidden ring-2 ring-background shadow-lg transition-transform duration-200">
+                                 <img src="https://images.pexels.com/photos/2773977/pexels-photo-2773977.jpeg"
+                                    alt="Aisha's profile" crossorigin="anonymous" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                              </div>
+                              <div class="absolute bottom-0 right-0">
+                                 <div class="relative">
+                                    <div class="w-5 h-5 rounded-full ring-2 ring-background bg-red-500"></div>
+                                    <div
+                                       class="absolute end-6 bottom-0 whitespace-nowrap bg-background/60 backdrop-blur-sm px-2 py-1 rounded-full text-xs pointer-events-none transition-all duration-200 border border-border/10 opacity-0 translate-x-2">
+                                       Not Available </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="flex-1 min-w-0">
+                              <div class="flex items-center gap-2">
+                                 <h3 class="font-bold transition-all duration-300 text-xl">Emaa, 29</h3><span
+                                    class="px-2 py-1 bg-indigo/10 text-indigo-700 rounded-full text-xs bg-indigo-100">Female</span>
+                              </div>
+                              <div class="mt-2 flex gap-2 items-center text-sm text-gray-500"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 me-2 flex-shrink-0">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                 </svg><span class="text-xs">Tuesdays &amp; Thursdays 5PM-8PM EST</span></div>
+                           </div>
+                           <div class="flex-shrink-0  ">
+                              <button title=" Notify Me when Available  "
+                                 class="group/btn inline-flex items-center 
+                                  justify-center w-10 h-10 border-2 border-indigo-500 text-indigo-500
+                                  hover:bg-primary hover:text-gray-400-foreground focus:bg-primary
+                                 focus:text-gray-400-foreground rounded-full transition-all duration-200
+                                  "><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-bell w-5 h-5">
+                                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="mt-3 flex flex-wrap gap-1.5"><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">self-esteem</span><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">cultural-identity</span><span
+                              class="px-2 py-1  bg-gray-100 text-indigo-800  rounded-full text-xs">relationships</span>
+                        </div>
+                        <div class="mt-4">
+                           <p class="transition-all duration-300 text-sm text-gray-500 line-clamp-2">
+                              Compassionate
+                              listener with a multicultural background. I help people navigate identity issues and
+                              relationship challeng...</p>
+                        </div>
+                        <div class="hidden content-transition mt-4 space-y-4 content-collapsed">
+                           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <polygon
+                                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Rating</div>
+                                 <div class="text-md font-bold text-foreground">4.9/5</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-message-circle w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Sessions</div>
+                                 <div class="text-md font-bold text-foreground">250+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-heart w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path
+                                       d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                    </path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Helped</div>
+                                 <div class="text-md font-bold text-foreground">180+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-users w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Return Rate</div>
+                                 <div class="text-md font-bold text-foreground">85%</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2 flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                 </svg> Avialables </h4>
+                              <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Mon:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Tue:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Wed:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Thu:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Fri:</span> 9AM-5PM</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2"> Languages</h4>
+                              <div class="flex flex-wrap gap-1.5"><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Arabic</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">American
+                                    English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Lebanese
+                                    Arabic</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-background/60 backdrop-blur-sm flex items-center 
+               justify-center transition-all duration-200 hover:bg-background hover:shadow-md focus:outline-none 
+               focus:ring-2 focus:ring-primary ">
+                  <span class="icon-expand block">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-maximize2 w-5 h-5 text-foreground/60 group-hover:text-foreground">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" x2="14" y1="3" y2="10"></line>
+                        <line x1="3" x2="10" y1="21" y2="14"></line>
+                     </svg>
+                  </span>
+                  <span class="icon-collapse hidden">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 12H8M8 12V18M8 12L1 19M18 8H12M12 8V2M12 8L19 1" stroke="black" stroke-width="2"
+                           stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </span>
+
+
+               </button>
+            </div>
+
+         </div>
+         <div data-id="6" class="grid-item  col-span-1 row-span-1" data-expand="both">
+
+            <div
+               class="group bg-card/40 text-card-foreground rounded-lg shadow-md overflow-hidden cursor-pointer relative transition-all duration-300 ease-in-out border border-border/5 md:hover:border-border/10 md:hover:bg-card/60 md:hover:shadow-xl md:hover:shadow-primary/5">
+               <div class="card-content h-full md:overflow-visible">
+                  <div class="p-6 h-full flex flex-col">
+                     <div class="card-scrollable-content">
+                        <div class="flex items-start gap-4">
+                           <div class="relative flex-shrink-0">
+                              <div
+                                 class="w-16 h-16 rounded-full overflow-hidden ring-2 ring-background shadow-lg transition-transform duration-200">
+                                 <img src="https://images.pexels.com/photos/6274712/pexels-photo-6274712.jpeg"
+                                    alt="Aisha's profile" crossorigin="anonymous" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                              </div>
+                              <div class="absolute bottom-0 right-0">
+                                 <div class="relative">
+                                    <div class="w-5 h-5 rounded-full ring-2 ring-background bg-green-500"></div>
+                                    <div
+                                       class="absolute end-6 bottom-0 whitespace-nowrap bg-background/60 backdrop-blur-sm px-2 py-1 rounded-full text-xs pointer-events-none transition-all duration-200 border border-border/10 opacity-0 translate-x-2">
+                                       Not Available </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="flex-1 min-w-0">
+                              <div class="flex items-center gap-2">
+                                 <h3 class="font-bold transition-all duration-300 text-xl">Carlos, 41</h3><span
+                                    class="px-2 py-1 bg-indigo/10 text-indigo-700 rounded-full text-xs bg-indigo-100">Male</span>
+                              </div>
+                              <div class="mt-2 flex gap-2 items-center text-sm text-gray-500"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 me-2 flex-shrink-0">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                 </svg><span class="text-xs text-green-500"> Available Now </span></div>
+                           </div>
+                           <div class="flex-shrink-0  ">
+                              <button title=" Notify Me when Available  "
+                                 class="group/btn inline-flex items-center 
+                                     justify-center w-10 h-10 border-2 border-primary text-gray-100
+                                     hover:bg-primary hover:text-gray-400 focus:bg-primary
+                                    focus:text-gray-400-foreground rounded-full transition-all duration-200 bg-indigo-500">
+
+                                 <svg width="20" height="20" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M7.38028 7.85323C8.07627 9.30285 9.02506 10.6615 10.2266 11.8631C11.4282 13.0646 12.7869 14.0134 14.2365 14.7094C14.3612 14.7693 14.4235 14.7992 14.5024 14.8222C14.7828 14.904 15.127 14.8453 15.3644 14.6752C15.4313 14.6274 15.4884 14.5702 15.6027 14.4559C15.9523 14.1063 16.1271 13.9315 16.3029 13.8172C16.9658 13.3862 17.8204 13.3862 18.4833 13.8172C18.6591 13.9315 18.8339 14.1063 19.1835 14.4559L19.3783 14.6508C19.9098 15.1822 20.1755 15.448 20.3198 15.7333C20.6069 16.3009 20.6069 16.9712 20.3198 17.5387C20.1755 17.8241 19.9098 18.0898 19.3783 18.6213L19.2207 18.7789C18.6911 19.3085 18.4263 19.5733 18.0662 19.7756C17.6667 20 17.0462 20.1614 16.588 20.16C16.1751 20.1588 15.8928 20.0787 15.3284 19.9185C12.295 19.0575 9.43264 17.433 7.04466 15.045C4.65668 12.6571 3.03221 9.79471 2.17124 6.76131C2.01103 6.19687 1.93092 5.91464 1.9297 5.5017C1.92833 5.04347 2.08969 4.42298 2.31411 4.02348C2.51636 3.66345 2.78117 3.39863 3.3108 2.86901L3.46843 2.71138C3.99987 2.17993 4.2656 1.91421 4.55098 1.76987C5.11854 1.4828 5.7888 1.4828 6.35636 1.76987C6.64174 1.91421 6.90747 2.17993 7.43891 2.71138L7.63378 2.90625C7.98338 3.25585 8.15819 3.43065 8.27247 3.60643C8.70347 4.26932 8.70347 5.1239 8.27247 5.78679C8.15819 5.96257 7.98338 6.13738 7.63378 6.48698C7.51947 6.60129 7.46231 6.65845 7.41447 6.72526C7.24446 6.96269 7.18576 7.30695 7.26748 7.5873C7.29048 7.6662 7.32041 7.72854 7.38028 7.85323Z"
+                                       stroke="#fff" class="w-5 h-5" stroke-width="2" stroke-linecap="round"
+                                       stroke-linejoin="round" />
+                                 </svg>
+
+                              </button>
+                           </div>
+                        </div>
+                        <div class="mt-3 flex flex-wrap gap-1.5"><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">self-esteem</span><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">cultural-identity</span><span
+                              class="px-2 py-1  bg-gray-100 text-indigo-800  rounded-full text-xs">relationships</span>
+                        </div>
+                        <div class="mt-4">
+                           <p class="transition-all duration-300 text-sm text-gray-500 line-clamp-2">
+                              Compassionate
+                              listener with a multicultural background. I help people navigate identity issues and
+                              relationship challeng...</p>
+                        </div>
+                        <div class="hidden content-transition mt-4 space-y-4 content-collapsed">
+                           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <polygon
+                                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Rating</div>
+                                 <div class="text-md font-bold text-foreground">4.9/5</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-message-circle w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Sessions</div>
+                                 <div class="text-md font-bold text-foreground">250+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-heart w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path
+                                       d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                    </path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Helped</div>
+                                 <div class="text-md font-bold text-foreground">180+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-users w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Return Rate</div>
+                                 <div class="text-md font-bold text-foreground">85%</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2 flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                 </svg> Avialables </h4>
+                              <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Mon:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Tue:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Wed:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Thu:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Fri:</span> 9AM-5PM</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2"> Languages</h4>
+                              <div class="flex flex-wrap gap-1.5"><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Arabic</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">American
+                                    English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Lebanese
+                                    Arabic</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-background/60 backdrop-blur-sm flex items-center 
+               justify-center transition-all duration-200 hover:bg-background hover:shadow-md focus:outline-none 
+               focus:ring-2 focus:ring-primary ">
+                  <span class="icon-expand block">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-maximize2 w-5 h-5 text-foreground/60 group-hover:text-foreground">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" x2="14" y1="3" y2="10"></line>
+                        <line x1="3" x2="10" y1="21" y2="14"></line>
+                     </svg>
+                  </span>
+                  <span class="icon-collapse hidden">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 12H8M8 12V18M8 12L1 19M18 8H12M12 8V2M12 8L19 1" stroke="black" stroke-width="2"
+                           stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </span>
+
+
+               </button>
+            </div>
+
+         </div>
+
+
+         <div data-id="7" class="grid-item  col-span-1 row-span-1" data-expand="both">
+
+            <div
+               class="group bg-card/40 text-card-foreground rounded-lg shadow-md overflow-hidden cursor-pointer relative transition-all duration-300 ease-in-out border border-border/5 md:hover:border-border/10 md:hover:bg-card/60 md:hover:shadow-xl md:hover:shadow-primary/5">
+               <div class="card-content h-full md:overflow-visible">
+                  <div class="p-6 h-full flex flex-col">
+                     <div class="card-scrollable-content">
+                        <div class="flex items-start gap-4">
+                           <div class="relative flex-shrink-0">
+                              <div
+                                 class="w-16 h-16 rounded-full overflow-hidden ring-2 ring-background shadow-lg transition-transform duration-200">
+                                 <img src="https://images.pexels.com/photos/1772475/pexels-photo-1772475.jpeg"
+                                    alt="Aisha's profile" crossorigin="anonymous" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                              </div>
+                              <div class="absolute bottom-0 right-0">
+                                 <div class="relative">
+                                    <div class="w-5 h-5 rounded-full ring-2 ring-background bg-green-500"></div>
+                                    <div
+                                       class="absolute end-6 bottom-0 whitespace-nowrap bg-background/60 backdrop-blur-sm px-2 py-1 rounded-full text-xs pointer-events-none transition-all duration-200 border border-border/10 opacity-0 translate-x-2">
+                                       Not Available </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="flex-1 min-w-0">
+                              <div class="flex items-center gap-2">
+                                 <h3 class="font-bold transition-all duration-300 text-xl">Mary, 35</h3><span
+                                    class="px-2 py-1 bg-indigo/10 text-indigo-700 rounded-full text-xs bg-indigo-100">Female</span>
+                              </div>
+                              <div class="mt-2 flex gap-2 items-center text-sm text-gray-500"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 me-2 flex-shrink-0">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                 </svg><span class="text-xs text-green-500"> Available Now </span></div>
+                           </div>
+                           <div class="flex-shrink-0  ">
+                              <button title=" Notify Me when Available  "
+                                 class="group/btn inline-flex items-center 
+                                     justify-center w-10 h-10 border-2 border-primary text-gray-100
+                                     hover:bg-primary hover:text-gray-400 focus:bg-primary
+                                    focus:text-gray-400-foreground rounded-full transition-all duration-200 bg-indigo-500">
+
+                                 <svg width="20" height="20" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M7.38028 7.85323C8.07627 9.30285 9.02506 10.6615 10.2266 11.8631C11.4282 13.0646 12.7869 14.0134 14.2365 14.7094C14.3612 14.7693 14.4235 14.7992 14.5024 14.8222C14.7828 14.904 15.127 14.8453 15.3644 14.6752C15.4313 14.6274 15.4884 14.5702 15.6027 14.4559C15.9523 14.1063 16.1271 13.9315 16.3029 13.8172C16.9658 13.3862 17.8204 13.3862 18.4833 13.8172C18.6591 13.9315 18.8339 14.1063 19.1835 14.4559L19.3783 14.6508C19.9098 15.1822 20.1755 15.448 20.3198 15.7333C20.6069 16.3009 20.6069 16.9712 20.3198 17.5387C20.1755 17.8241 19.9098 18.0898 19.3783 18.6213L19.2207 18.7789C18.6911 19.3085 18.4263 19.5733 18.0662 19.7756C17.6667 20 17.0462 20.1614 16.588 20.16C16.1751 20.1588 15.8928 20.0787 15.3284 19.9185C12.295 19.0575 9.43264 17.433 7.04466 15.045C4.65668 12.6571 3.03221 9.79471 2.17124 6.76131C2.01103 6.19687 1.93092 5.91464 1.9297 5.5017C1.92833 5.04347 2.08969 4.42298 2.31411 4.02348C2.51636 3.66345 2.78117 3.39863 3.3108 2.86901L3.46843 2.71138C3.99987 2.17993 4.2656 1.91421 4.55098 1.76987C5.11854 1.4828 5.7888 1.4828 6.35636 1.76987C6.64174 1.91421 6.90747 2.17993 7.43891 2.71138L7.63378 2.90625C7.98338 3.25585 8.15819 3.43065 8.27247 3.60643C8.70347 4.26932 8.70347 5.1239 8.27247 5.78679C8.15819 5.96257 7.98338 6.13738 7.63378 6.48698C7.51947 6.60129 7.46231 6.65845 7.41447 6.72526C7.24446 6.96269 7.18576 7.30695 7.26748 7.5873C7.29048 7.6662 7.32041 7.72854 7.38028 7.85323Z"
+                                       stroke="#fff" class="w-5 h-5" stroke-width="2" stroke-linecap="round"
+                                       stroke-linejoin="round" />
+                                 </svg>
+
+                              </button>
+                           </div>
+                        </div>
+                        <div class="mt-3 flex flex-wrap gap-1.5"><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">self-esteem</span><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">cultural-identity</span><span
+                              class="px-2 py-1  bg-gray-100 text-indigo-800  rounded-full text-xs">relationships</span>
+                        </div>
+                        <div class="mt-4">
+                           <p class="transition-all duration-300 text-sm text-gray-500 line-clamp-2">
+                              Compassionate
+                              listener with a multicultural background. I help people navigate identity issues and
+                              relationship challeng...</p>
+                        </div>
+                        <div class="hidden content-transition mt-4 space-y-4 content-collapsed">
+                           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <polygon
+                                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Rating</div>
+                                 <div class="text-md font-bold text-foreground">4.9/5</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-message-circle w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Sessions</div>
+                                 <div class="text-md font-bold text-foreground">250+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-heart w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path
+                                       d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                    </path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Helped</div>
+                                 <div class="text-md font-bold text-foreground">180+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-users w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Return Rate</div>
+                                 <div class="text-md font-bold text-foreground">85%</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2 flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                 </svg> Avialables </h4>
+                              <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Mon:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Tue:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Wed:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Thu:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Fri:</span> 9AM-5PM</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2"> Languages</h4>
+                              <div class="flex flex-wrap gap-1.5"><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Arabic</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">American
+                                    English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Lebanese
+                                    Arabic</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-background/60 backdrop-blur-sm flex items-center 
+               justify-center transition-all duration-200 hover:bg-background hover:shadow-md focus:outline-none 
+               focus:ring-2 focus:ring-primary ">
+                  <span class="icon-expand block">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-maximize2 w-5 h-5 text-foreground/60 group-hover:text-foreground">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" x2="14" y1="3" y2="10"></line>
+                        <line x1="3" x2="10" y1="21" y2="14"></line>
+                     </svg>
+                  </span>
+                  <span class="icon-collapse hidden">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 12H8M8 12V18M8 12L1 19M18 8H12M12 8V2M12 8L19 1" stroke="black" stroke-width="2"
+                           stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </span>
+
+
+               </button>
+            </div>
+
+         </div>
+         <div data-id="8" class="grid-item  col-span-1 row-span-1" data-expand="both">
+
+            <div
+               class="group bg-card/40 text-card-foreground rounded-lg shadow-md overflow-hidden cursor-pointer relative transition-all duration-300 ease-in-out border border-border/5 md:hover:border-border/10 md:hover:bg-card/60 md:hover:shadow-xl md:hover:shadow-primary/5">
+               <div class="card-content h-full md:overflow-visible">
+                  <div class="p-6 h-full flex flex-col">
+                     <div class="card-scrollable-content">
+                        <div class="flex items-start gap-4">
+                           <div class="relative flex-shrink-0">
+                              <div
+                                 class="w-16 h-16 rounded-full overflow-hidden ring-2 ring-background shadow-lg transition-transform duration-200">
+                                 <img src="https://images.pexels.com/photos/5378700/pexels-photo-5378700.jpeg"
+                                    alt="Aisha's profile" crossorigin="anonymous" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                              </div>
+                              <div class="absolute bottom-0 right-0">
+                                 <div class="relative">
+                                    <div class="w-5 h-5 rounded-full ring-2 ring-background bg-yellow-500"></div>
+                                    <div
+                                       class="absolute end-6 bottom-0 whitespace-nowrap bg-background/60 backdrop-blur-sm px-2 py-1 rounded-full text-xs pointer-events-none transition-all duration-200 border border-border/10 opacity-0 translate-x-2">
+                                       Not Available </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="flex-1 min-w-0">
+                              <div class="flex items-center gap-2">
+                                 <h3 class="font-bold transition-all duration-300 text-xl">jony, 32</h3><span
+                                    class="px-2 py-1 bg-indigo/10 text-indigo-700 rounded-full text-xs bg-indigo-100">Male</span>
+                              </div>
+                              <div class="mt-2 flex gap-2 items-center text-sm text-gray-500"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 me-2 flex-shrink-0">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                 </svg><span class="text-xs">Weekends &amp; Thursdays 10AM-4PM EST</span></div>
+                           </div>
+                           <div class="flex-shrink-0  ">
+                              <button title=" Notify Me when Available  "
+                                 class="group/btn inline-flex items-center 
+                                  justify-center w-10 h-10 border-2 border-indigo-500 text-indigo-500
+                                  hover:bg-primary hover:text-gray-400-foreground focus:bg-primary
+                                 focus:text-gray-400-foreground rounded-full transition-all duration-200
+                                  "><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-bell w-5 h-5">
+                                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="mt-3 flex flex-wrap gap-1.5"><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">self-esteem</span><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">cultural-identity</span><span
+                              class="px-2 py-1  bg-gray-100 text-indigo-800  rounded-full text-xs">relationships</span>
+                        </div>
+                        <div class="mt-4">
+                           <p class="transition-all duration-300 text-sm text-gray-500 line-clamp-2">
+                              Compassionate
+                              listener with a multicultural background. I help people navigate identity issues and
+                              relationship challeng...</p>
+                        </div>
+                        <div class="hidden content-transition mt-4 space-y-4 content-collapsed">
+                           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <polygon
+                                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Rating</div>
+                                 <div class="text-md font-bold text-foreground">4.9/5</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-message-circle w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Sessions</div>
+                                 <div class="text-md font-bold text-foreground">250+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-heart w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path
+                                       d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                    </path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Helped</div>
+                                 <div class="text-md font-bold text-foreground">180+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-users w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Return Rate</div>
+                                 <div class="text-md font-bold text-foreground">85%</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2 flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                 </svg> Avialables </h4>
+                              <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Mon:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Tue:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Wed:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Thu:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Fri:</span> 9AM-5PM</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2"> Languages</h4>
+                              <div class="flex flex-wrap gap-1.5"><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Arabic</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">American
+                                    English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Lebanese
+                                    Arabic</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-background/60 backdrop-blur-sm flex items-center 
+               justify-center transition-all duration-200 hover:bg-background hover:shadow-md focus:outline-none 
+               focus:ring-2 focus:ring-primary ">
+                  <span class="icon-expand block">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-maximize2 w-5 h-5 text-foreground/60 group-hover:text-foreground">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" x2="14" y1="3" y2="10"></line>
+                        <line x1="3" x2="10" y1="21" y2="14"></line>
+                     </svg>
+                  </span>
+                  <span class="icon-collapse hidden">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 12H8M8 12V18M8 12L1 19M18 8H12M12 8V2M12 8L19 1" stroke="black" stroke-width="2"
+                           stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </span>
+
+
+               </button>
+            </div>
+
+         </div>
+         <div data-id="9" class="grid-item  col-span-1 row-span-1" data-expand="both">
+
+            <div
+               class="group bg-card/40 text-card-foreground rounded-lg shadow-md overflow-hidden cursor-pointer relative transition-all duration-300 ease-in-out border border-border/5 md:hover:border-border/10 md:hover:bg-card/60 md:hover:shadow-xl md:hover:shadow-primary/5">
+               <div class="card-content h-full md:overflow-visible">
+                  <div class="p-6 h-full flex flex-col">
+                     <div class="card-scrollable-content">
+                        <div class="flex items-start gap-4">
+                           <div class="relative flex-shrink-0">
+                              <div
+                                 class="w-16 h-16 rounded-full overflow-hidden ring-2 ring-background shadow-lg transition-transform duration-200">
+                                 <img src="https://images.pexels.com/photos/8129903/pexels-photo-8129903.jpeg"
+                                    alt="Aisha's profile" crossorigin="anonymous" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                              </div>
+                              <div class="absolute bottom-0 right-0">
+                                 <div class="relative">
+                                    <div class="w-5 h-5 rounded-full ring-2 ring-background bg-red-500"></div>
+                                    <div
+                                       class="absolute end-6 bottom-0 whitespace-nowrap bg-background/60 backdrop-blur-sm px-2 py-1 rounded-full text-xs pointer-events-none transition-all duration-200 border border-border/10 opacity-0 translate-x-2">
+                                       Not Available </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="flex-1 min-w-0">
+                              <div class="flex items-center gap-2">
+                                 <h3 class="font-bold transition-all duration-300 text-xl">Carolina, 23</h3><span
+                                    class="px-2 py-1 bg-indigo/10 text-indigo-700 rounded-full text-xs bg-indigo-100">Female</span>
+                              </div>
+                              <div class="mt-2 flex gap-2 items-center text-sm text-gray-500"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 me-2 flex-shrink-0">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                 </svg><span class="text-xs">Tuesdays &amp; Thursdays 5PM-8PM EST</span></div>
+                           </div>
+                           <div class="flex-shrink-0  ">
+                              <button title=" Notify Me when Available  "
+                                 class="group/btn inline-flex items-center 
+                                  justify-center w-10 h-10 border-2 border-indigo-500 text-indigo-500
+                                  hover:bg-primary hover:text-gray-400-foreground focus:bg-primary
+                                 focus:text-gray-400-foreground rounded-full transition-all duration-200
+                                  "><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-bell w-5 h-5">
+                                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                                 </svg>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="mt-3 flex flex-wrap gap-1.5"><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">self-esteem</span><span
+                              class="px-2 py-1 bg-gray-100 text-indigo-800 rounded-full text-xs">cultural-identity</span><span
+                              class="px-2 py-1  bg-gray-100 text-indigo-800  rounded-full text-xs">relationships</span>
+                        </div>
+                        <div class="mt-4">
+                           <p class="transition-all duration-300 text-sm text-gray-500 line-clamp-2">
+                              Compassionate
+                              listener with a multicultural background. I help people navigate identity issues and
+                              relationship challeng...</p>
+                        </div>
+                        <div class="hidden content-transition mt-4 space-y-4 content-collapsed">
+                           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <polygon
+                                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Rating</div>
+                                 <div class="text-md font-bold text-foreground">4.9/5</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-2 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-message-circle w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Sessions</div>
+                                 <div class="text-md font-bold text-foreground">250+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-heart w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path
+                                       d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                    </path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Helped</div>
+                                 <div class="text-md font-bold text-foreground">180+</div>
+                              </div>
+                              <div class=" bg-gray-100 rounded-lg p-3 text-center border border-border/5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-users w-5 h-5 mx-auto mb-2 text-gray-400">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                 </svg>
+                                 <div class="text-sm font-medium text-gray-500">Return Rate</div>
+                                 <div class="text-md font-bold text-foreground">85%</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2 flex items-center gap-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                 </svg> Avialables </h4>
+                              <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Mon:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Tue:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Wed:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Thu:</span> 9AM-5PM</div>
+                                 <div class=" bg-gray-100 rounded-lg p-2 text-sm border border-border/5"><span
+                                       class="font-medium">Fri:</span> 9AM-5PM</div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4 class="text-sm font-semibold text-foreground/80 mb-2"> Languages</h4>
+                              <div class="flex flex-wrap gap-1.5"><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Arabic</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">American
+                                    English</span><span
+                                    class="px-2 py-1  bg-gray-100 rounded-full text-xs border border-border/5">Lebanese
+                                    Arabic</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-background/60 backdrop-blur-sm flex items-center 
+               justify-center transition-all duration-200 hover:bg-background hover:shadow-md focus:outline-none 
+               focus:ring-2 focus:ring-primary ">
+                  <span class="icon-expand block">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-maximize2 w-5 h-5 text-foreground/60 group-hover:text-foreground">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" x2="14" y1="3" y2="10"></line>
+                        <line x1="3" x2="10" y1="21" y2="14"></line>
+                     </svg>
+                  </span>
+                  <span class="icon-collapse hidden">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 12H8M8 12V18M8 12L1 19M18 8H12M12 8V2M12 8L19 1" stroke="black" stroke-width="2"
+                           stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </span>
+
+
+               </button>
+            </div>
+
+         </div>
+
+
+      </div>
+   </div>
+   <script>
+      const items = document.querySelectorAll('.grid-item');
+      const menuItems = document.querySelectorAll('.menu-item');
+      let activeItem = null;
+
+
+      items.forEach(item => {
+         item.addEventListener('click', () => {
+            const expandType = item.dataset.expand;
+            const id = item.dataset.id;
+            // Reset all items
+            items.forEach(i => {
+               i.classList.remove('col-span-2', 'row-span-2', 'border', 'border-green-500', 'rounded-lg');
+               i.classList.add('col-span-1', 'row-span-1');
+               const collapsedDiv = i.querySelector('.content-collapsed');
+
+               if (collapsedDiv) {
+
+                  i.querySelector('.icon-collapse').classList.remove('block');
+                  i.querySelector('.icon-collapse').classList.add('hidden');
+
+                  i.querySelector('.icon-expand').classList.remove('hidden');
+                  i.querySelector('.icon-expand').classList.add('block');
+
+                  collapsedDiv.classList.add('hidden');
+                  collapsedDiv.classList.remove('block');
+               }
+            });
+
+            // If clicking same item again, collapse it
+            if (activeItem === item) {
+               activeItem = null;
+               highlightMenu(null);
+
+            } else {
+               // Expand this item
+               item.classList.remove('col-span-1', 'row-span-1');
+               item.classList.add('col-span-2', 'row-span-2', 'border', 'border-green-500', 'rounded-lg');
+               const collapsedDiv = item.querySelector('.content-collapsed');
+
+               if (collapsedDiv) {
+
+                  item.querySelector('.icon-collapse').classList.remove('hidden');
+                  item.querySelector('.icon-collapse').classList.add('block');
+
+                  item.querySelector('.icon-expand').classList.remove('block');
+                  item.querySelector('.icon-expand').classList.add('hidden');
+
+                  collapsedDiv.classList.remove('hidden');
+                  collapsedDiv.classList.add('block');
+               }
+               activeItem = item;
+               highlightMenu(id);
+
+            }
+         });
+      });
+
+      function highlightMenu(id) {
+         menuItems.forEach(menu => {
+            if (menu.dataset.id === id) {
+               menu.classList.add('text-gray-100', 'font-bold', 'bg-green-500');
+            } else {
+               menu.classList.remove('text-gray-100', 'font-bold', 'bg-green-500');
+            }
+         });
+      }
+
+
+   </script>
+</body>
+<script src="https://flowbite.com/docs/flowbite.min.js"></script>
+
+</html>
